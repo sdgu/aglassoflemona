@@ -13,7 +13,7 @@
 
 <div class="navigation">
 
-<!--#include virtual="/sidebar.html" -->
+<!--#include virtual="sidebar.html" -->
 	
 </div>
 
