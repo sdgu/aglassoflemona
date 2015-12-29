@@ -2,6 +2,7 @@
 <head>
 <title>PLL</title>
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/cubingStyle.css">
 <link rel="shortcut icon" href="/images/cube.ico">
 
 <style>
@@ -22,40 +23,15 @@
 <div id="pagelinks" class="section">
 
 
-    <ul id="interlinks">
+<!--#include virtual="/cubing/cubingnav.html" -->
 
-        <li style="margin-right: 36px; color: rgb(184, 170, 150);">
-            <a title="Main" href="/cubing" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" 	class="cubing">Main</a>
-        </li>     
-
-        <li style="margin-right: 36px; color: rgb(184, 170, 150);">
-            <a title="Beginner's Method" href="/cubing/beginner" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" 	class="cubing">Beginner's Method</a>
-        </li>     
-
-        <li style="margin-right: 36px; color: rgb(184, 170, 150);">
-            <a title="Cross" href="/cubing/cross" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" class="cubing">Cross</a>
-        </li>     
-        <li style="margin-right: 36px; color: rgb(184, 170, 150);">
-            <a title="F2L" href="/cubing/f2l" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" class="cubing">F2L</a>
-        </li>
-        <li style="margin-right: 36px; color: rgb(184, 170, 150);">
-            <a title="OLL (link)" href="/cubing/oll" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" class="cubing">OLL</a>
-        </li>
-        <li style="margin-right: 0px; color: rgb(184, 170, 150);">
-            <a title="PLL (link)" href="/cubing/pll" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" class="cubing">PLL</a>
-        </li>
-
-
-    </ul>
 
 </div>
 </div>
 </div>
 
-<div class = "navigation">
-<!--#include virtual="/sidebar.html" -->
-	
-</div>
+
+
 
 
 <div id="container">
