@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Beginner's Method</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="shortcut icon" href="/images/cube.ico">
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+<div id="cubing">
+<div id="site" class="section">
+
+<div id="pagelinks" class="section">
+
+
+    <ul id="interlinks">
+
+        <li style="margin-right: 36px; color: rgb(184, 170, 150);">
+            <a title="Main" href="/cubing" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" 	class="cubing">Main</a>
+        </li>     
+
+        <li style="margin-right: 36px; color: rgb(184, 170, 150);">
+            <a title="Beginner's Method" href="/cubing/beginner" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" 	class="cubing">Beginner's Method</a>
+        </li>     
+
+        <li style="margin-right: 36px; color: rgb(184, 170, 150);">
+            <a title="Cross" href="/cubing/cross" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" class="cubing">Cross</a>
+        </li>     
+        <li style="margin-right: 36px; color: rgb(184, 170, 150);">
+            <a title="F2L" href="/cubing/f2l" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" class="cubing">F2L</a>
+        </li>
+        <li style="margin-right: 36px; color: rgb(184, 170, 150);">
+            <a title="OLL (link)" href="/cubing/oll" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" class="cubing">OLL</a>
+        </li>
+        <li style="margin-right: 0px; color: rgb(184, 170, 150);">
+            <a title="PLL (link)" href="/cubing/pll" style="color: rgb(184, 170, 150); border-color: rgb(184, 170, 150);" class="cubing">PLL</a>
+        </li>
+
+
+    </ul>
+
+</div>
+</div>
+</div>
+
+
+
+<div class = "navigation">
+
+	<!--#include virtual="/sidebar.html" -->
+</div>
+
+<div id="container">
+
+<div id="site" class="section">
+
+<h2>Beginner's Method</h2>
+<p>Minimal algorithms but transitions into CFOP. Therefore, mirrors. Helps train both hands. Cross, 1st layer, 2nd layer, minimal algorithms OLL, minimal algorithms PLL. Should learn CFOP even if going into other methods because it's the most widespread and has good ideas behind it.</p> <br />
+
+<p>
+<a href="https://youtu.be/X3dMToQvrPI" target="_blank">Basic Notation</a> <br />
+</p>
+<h2>Cross</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dw4R8Rke1fY" frameborder="0" allowfullscreen></iframe>
+
+<h2>First Layer</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5rEspCElNJU" frameborder="0" allowfullscreen></iframe>
+
+</div>
+</div>
+
+
+</body>
+</html>

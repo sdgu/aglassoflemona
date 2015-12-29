@@ -1,0 +1,26 @@
+<html>
+<header>
+<link rel="stylesheet" href="/css/style.css">
+<title>Shoutouts</title>
+
+
+</header>
+
+<body>
+<div class = "navigation">
+<!--#include virtual="/sidebar.html" -->
+	
+</div>
+<div id="container">
+<div id = "site" class="section">
+
+<p>Cubing images taken from the speedsolving wiki.</p>
+<p>Thanks <a href="http://sephirona.deviantart.com/">Sephirona</a> for the Manaphy icon.</p>
+<p>Also Alice over at shaym.in, for providing pretty CSS that I shamelessly stole *-*</p>
+</div>
+
+</div>
+</body>
+
+
+</html>
