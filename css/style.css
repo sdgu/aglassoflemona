@@ -127,14 +127,16 @@ input:hover
 
 
 
-.section {
+.section 
+{
     margin-top: 15px;
+
 
 }
 
 
 
-/* ids */
+/* ids 
 
 * {
     margin: 0px;
@@ -155,7 +157,7 @@ input:hover
         padding-left-rtl-source: physical;
         padding-right-ltr-source: physical;
         padding-right-rtl-source: physical;
-}
+} */
 
 #container {
     margin: 5% auto;
@@ -181,4 +183,6 @@ input:hover
         margin-right-ltr-source: physical;
         margin-right-rtl-source: physical;
     width: 430px;
+
 }
+

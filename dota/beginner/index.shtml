@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beginner's Guide</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/sidebarStyle.css">
+<link rel="stylesheet" href="/css/dotabegStyle.css">
+
+
+
+</head>
+
+<body>
+
+
+<div id="dotawrapper">
+
+<div id="beginnerpage">
+
+<h2>The Minimalist Beginner's Guide to Dota</h2>
+<p>Dota 2 is a great game.</p>
+<p>Problem is, there are tons of mechanics that have made their way into the game, intentionally or not, and so many of them are just unnecessary if you're starting out. It's really uncomfortable trying to learn about an advanced when you don't even grasp the basics yet!</p>
+<p>This guide will hopefully give you the bare minimum, intuitive mechanics to help you start out in the right direction.</p>
+<h3>Background</h3>
+<p>Dota is a 5v5 game. You'll either start in the bottom left (Radiant) or top right (Dire) of the map. The place where you spawn and respawn (the fountain) will restore your Health and Mana if they aren't full, so you'll want to return there when you're low to avoid being killed.</p>
+[radiant fountain image] [dire fountain image] 
+<p>Near that is the ancient. Once enough towers have been destroyed, the opponent can start attacking it--if it dies, you lose.</p>
+[radiant ancient] [dire ancient]
+<p>Here are those places on the minimap.</p>
+[minimap with relevant places circled]
+<p>Lastly, don't be discouraged if you face an opponent who wrecks your team. Some experienced players make new accounts to play with their newer friends or get a new rating. The system generally does a good job of getting them out of the beginner pool quickly.</p>
+<h3>Basics</h3>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+
+
+</div>
+
+
+</div>
+
+</body>
+
+
+
+
+
+
+</html>

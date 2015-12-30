@@ -19,6 +19,8 @@
 </div>
 
 
+
+
 <div id="frontpage">
 <div id="site" class="section">
 
@@ -43,23 +45,7 @@
 <p align="right">pro quick draw   </p>
 </div>
 
-<!--
-<div id="ext-icons" class="section" style="border-color: rgb(210, 205, 214);">
 
-    <ul id="outgoing-icons">
-        <li style="margin-right: 432px;">
-            <a href="http://twitter.com/SmogonLemonade" style="color: rgb(168, 164, 171); border-color: rgb(168, 164, 171);">
-                <img alt="Twitter (link)" src="/images/twitter.png"></img>
-            </a>
-        </li>
-        <li style="margin-right: 0px;">
-           <a href="http://youtube.com/Searqq" style="color: rgb(168, 164, 171); border-color: rgb(168, 164, 171);">
-                <img alt="Youtube (link)" src="/images/youtube.png"></img>
-           </a>
-        </li>
-    </ul>
-</div>
--->
 
 
 
