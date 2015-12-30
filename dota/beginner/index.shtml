@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Beginner's Guide</title>
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/sidebarStyle.css">
-<link rel="stylesheet" href="/css/dotabegStyle.css">
+	<title>Beginner's Guide</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/sidebarStyle.css">
+	<link rel="stylesheet" href="/css/dotabegStyle.css">
 
 
 
@@ -13,21 +13,189 @@
 <body>
 
 
-<div id="dotawrapper">
+	<div id="dotawrapper">
 
-<div id="beginnerpage">
+		<div id="beginnerpage">
 
-<h2>The Minimalist Beginner's Guide to Dota</h2>
-<p>Dota 2 is a great game.</p>
-<p>Problem is, there are tons of mechanics that have made their way into the game, intentionally or not, and so many of them are just unnecessary if you're starting out. It's really uncomfortable trying to learn about an advanced when you don't even grasp the basics yet!</p>
-<p>This guide will hopefully give you the bare minimum, intuitive mechanics to help you start out in the right direction.</p>
-<h3>Background</h3>
-<p>Dota is a 5v5 game. You'll either start in the bottom left (Radiant) or top right (Dire) of the map. The place where you spawn and respawn (the fountain) will restore your Health and Mana if they aren't full, so you'll want to return there when you're low to avoid being killed.</p>
-[radiant fountain image] [dire fountain image] 
-<p>Near that is the ancient. Once enough towers have been destroyed, the opponent can start attacking it--if it dies, you lose.</p>
-[radiant ancient] [dire ancient]
+			<h2>The Minimalist Beginner's Guide to Dota</h2>
+			<p>Dota 2 is a great game.</p>
+			<p>Problem is, there are tons of mechanics that have made their way into the game, intentionally or not, and so many of them are just unnecessary if you're starting out. It's really uncomfortable trying to learn about an advanced when you don't even grasp the basics yet!</p>
+			<p>This guide will hopefully give you the bare minimum, intuitive mechanics to help you start out in the right direction.</p>
+			<h3>Background</h3>
+			<p>Dota is a 5v5 game. You'll either start in the bottom left (Radiant) or top right (Dire) of the map. The place where you spawn and respawn (the fountain) will restore your Health and Mana if they aren't full, so you'll want to return there when you're low to avoid being killed.</p>
+			[radiant fountain image] [dire fountain image] 
+			<p>Near that is the ancient. Once enough towers have been destroyed, the opponent can start attacking it--if it dies, you lose.</p>
+			[radiant ancient] [dire ancient]
+			<p>
+
+				<canvas id="radDireAnc" width="510" height="235"></canvas>
+				<script>
+
+	//http://www.html5canvastutorials.com/tutorials/html5-canvas-image-loader/
+	/*function loadImages(sources, callback) 
+	{
+        var images = {};
+        var loadedImages = 0;
+        var numImages = 0;
+        // get num of sources
+        for(var src in sources) {
+          numImages++;
+        }
+        for(var src in sources) {
+          images[src] = new Image();
+          images[src].onload = function() {
+            if(++loadedImages >= numImages) {
+              callback(images);
+            }
+          };
+          images[src].src = sources[src];
+        }
+      }
+
+		var canvas = document.getElementById("radDireAnc");
+		var context = canvas.getContext("2d");
+
+
+
+
+		var sources = 
+		{
+			radAncient: "/images/dota/beginner/rad_ancient_orig.png",
+			direAncient: "/images/dota/beginner/dire_ancient_orig.png"
+
+	
+
+		};
+
+		loadImages(sources, function(images)
+		{
+			context.drawImage(images.radAncient, 0, 0, 242, 235);
+			context.drawImage(images.direAncient, 252, 0, 242, 235);
+
+
+		}); */
+
+
+
+var canvas = document.getElementById("radDireAnc");
+var context = canvas.getContext("2d");
+var x = 0;
+var y = 0;
+var width = 242;
+var height = 235;
+var imageObj = new Image();
+
+var x2 = 252;
+var width2 = 242;
+var height2 = 235;
+var imageObj2 = new Image();
+
+imageObj.onload = function()
+{
+	context.drawImage(imageObj, x, y, width, height);
+};
+imageObj.src = "/images/dota/beginner/rad_ancient_orig.png";
+
+imageObj2.onload = function()
+{
+	context.drawImage(imageObj2, x2, y, width2, height2);
+};
+imageObj2.src = "/images/dota/beginner/dire_ancient_orig.png"; 
+
+</script>
+
+<!--<img src="/images/dota/beginner/rad_ancient_orig.png">-->
+
+
+</p>
 <p>Here are those places on the minimap.</p>
-[minimap with relevant places circled]
+<p>
+
+	<canvas id="mmLabel1" width="209" height="205"></canvas>
+	<script>
+
+	var canvas2 = document.getElementById("mmLabel1");
+	var context2 = canvas2.getContext("2d");
+	var imageObj3 = new Image();
+
+	function drawStroked(text, x, y) 
+	{
+    context2.font = "12px Arial"
+    context2.strokeStyle = 'black';
+    //context2.lineWidth = 8;
+    context2.strokeText(text, x, y);
+    context2.fillStyle = 'white';
+    context2.fillText(text, x, y);
+	}
+
+
+	imageObj3.onload = function()
+	{
+		context2.drawImage(imageObj3, 0, 0, 209, 205);
+
+		canvas2.onclick = function(e)
+		{
+			var rect = canvas2.getBoundingClientRect(),
+			x = e.clientX - rect.left,
+			y = e.clientY - rect.top;
+
+			//var data = context2.getImageData(x, y, 1, 1).data;
+			var xC = e.clientX - rect.left;
+			var yC = Math.floor(e.clientY - rect.top);
+
+			if ((xC > 9) && (xC < 25) && (yC > 179) && (yC < 195))
+			{
+				context2.beginPath();
+				context2.arc(18, 188, 15, 0, 2 * Math.PI);
+
+				context2.lineWidth = 3;
+				context2.strokeStyle = "green";
+				context2.stroke();
+
+				drawStroked("Radiant Fountain", 34, 191);
+				
+
+			}
+
+			else if ((xC > 27) && (xC < 37) && (yC > 172) && (yC < 178))
+			{
+				context2.beginPath();
+				context2.arc(33, 175, 5, 0, 2 * Math.PI);
+
+				context2.lineWidth = 3;
+				context2.strokeStyle = "#00e600";
+				context2.stroke();
+
+				drawStroked("Radiant Ancient", 38, 179);
+			}
+
+			//alert(xC + " " + yC);
+			
+		}
+
+//radiant fountain
+//top left 9,179
+//bottom left 9, 195
+//top right 25, 179
+//bottom right 25, 195
+
+//radiant ancient
+//tl 28, 176
+//bl 28, 178
+//tr 36, 172
+//br 36, 178
+
+
+	};
+	imageObj3.src = "/images/dota/beginner/minimap_orig.png"; 
+
+
+	</script>
+
+	<!--<img src="/images/dota/beginner/minimap_orig.png" id="minimapO">-->
+
+
+</p>
 <p>Lastly, don't be discouraged if you face an opponent who wrecks your team. Some experienced players make new accounts to play with their newer friends or get a new rating. The system generally does a good job of getting them out of the beginner pool quickly.</p>
 <h3>Basics</h3>
 <p></p>
