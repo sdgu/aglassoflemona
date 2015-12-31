@@ -51,17 +51,31 @@ function drawAll()
 function drawStroked(text, x, y)
 {
 
-    context2.font = "12px Arial"
-    context2.strokeStyle = 'black';
-//context2.lineWidth = 4;
-context2.strokeText(text, x, y);
-context2.fillStyle = 'white';
-context2.fillText(text, x, y);
-context2.miterLimit = 2;
+    context2.font = "12px Arial";
+    context2.strokeStyle = "black";
+    //context2.lineWidth = 4;
+    context2.strokeText(text, x, y);
+    context2.fillStyle = "white";
+    context2.fillText(text, x, y);
+    context2.miterLimit = 2;
 
 
 }
 
+function drawStroked2(cont, text, fSize, outWidth, outColor, inColor, x, y)
+{
+
+    cont.font = fSize + "px Arial";
+    cont.lineWidth = outWidth;
+    cont.strokeStyle = outColor;
+    //context2.lineWidth = 4;
+    cont.strokeText(text, x, y);
+    cont.fillStyle = inColor;
+    cont.fillText(text, x, y);
+    cont.miterLimit = 3;
+
+
+}
 
 imageObj3.onload = function()
 {
@@ -129,7 +143,7 @@ else if ((xC > 173) && (xC < 181) && (yC > 37) && (yC < 43))
 
 
 
-//alert(xC + " " + yC);
+alert(xC + " " + yC);
 
 }
 
