@@ -51,29 +51,69 @@
 			<p>When you spawn, buy some items. If you open the shop, there are suggested items. Just follow those for a while. You can also use community hero guides for more hero-specific tips.</p>
 			<p>[pictures of suggested items and where to find community guides]</p>
 			<p>The three important ones are Tangoes, Healing Salve, and Clarity. </p>
-			<p><!--<img src="/images/dota/items/tango.png" id="tangoPic"> -->
-				<canvas id="tango" width="43" height="32"></canvas>
+			<p>
+
+				<table class="itemDesc">
+					<tr>
+						<td>
+							<img src="/images/dota/items/tango.png" width="43" height="32">
+						</td>
+						<td>
+							<p>Target a tree to eat it. Doing so gives you some extra health regeneration, and more importantly, you don't lose the regen if you take damage.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="/images/dota/items/salve.png" width="43" height="32">
+						</td>
+						<td>
+							<p>Target yourself. Doing so gives you a lot of health regen, but if you take damage, you lose the regen.</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="/images/dota/items/clarity.png" width="43" height="32">
+						</td>
+						<td>
+							<p>Target yourself. Doing so gives you some extra mana regeneration, but if you take damage, you lose the regen.</p>
+						</td>
+
+					</tr>
+
+				</table>
+
+
+				<!--<canvas id="tango" width="43" height="32"></canvas>-->
 
 				<script>
 
-					var canvas3 = document.getElementById("tango");
-					var context3 = canvas3.getContext("2d");
-					var tangoImg = new Image();
+					// var canvas3 = document.getElementById("tango");
+					// var context3 = canvas3.getContext("2d");
+					// var tangoImg = new Image();
 
-					tangoImg.onload = function()
-					{
-						context3.drawImage(tangoImg, 0, 0, 43, 32);
-					};
-					tangoImg.src = "/images/dota/items/tango.png";
+					// tangoImg.onload = function()
+					// {
+					// 	context3.drawImage(tangoImg, 0, 0, 43, 32);
+					// };
+					// tangoImg.src = "/images/dota/items/tango.png";
 
 
 				</script>
 
-				Target a tree to eat it. Doing so gives you some extra health regeneration, and more importantly, you don't lose the regen if you take damage.
+				
 
 			</p>
-			<p>[picture of Salve] Target yourself. Doing so gives you a lot of health regen, but if you take damage, you lose the regen.</p>
-			<p>[picture of Clarity] Target yourself. Doing so gives you some extra mana regeneration, but if you take damage, you lose the regen.</p>
+			<p>
+
+				
+			</p>
+
+			<p>
+				
+
+
+				
+			</p>
 			<p>For more information on starting items, click <a>here</a>.</p>
 			<p>shopping</p>
 			<p>Now, go walk to any lane. It doesn't matter which one, but generally you only want one person in the middle. They are also named intuitively: mid for the middle, bot for the lanes going toward the bottom, and top for the lanes going toward the top. Try out all three so you can familiarize yourself with the map. </p>
@@ -106,10 +146,21 @@
 			<p>For more information on how towers target enemies, click <a>here</a>.</p>
 			<p>If your opponents manage to get your health low, it's a good time to go back to base. It's a far walk, but luckily you can shorten one direction with a Town Portal Scroll.</p>
 			<p>
-				<img src="/images/dota/items/tp.png" id="tpscroll" width="43" height="32">
+
+				<table class="itemDesc">
+					<tr>
+						<td>
+							<img src="/images/dota/items/tp.png" class="itemDesc" width="43" height="32">
+						</td>
+						<td>
+							<p>Target somewhere near a tower. After channeling for x seconds, you'll appear where you targeted. You can also double click it or target the fountain to go back there. TPing is very important (click <a>here</a> for more), but until you're more familiar with the game, you can just use these for quick transportation.</p>
+						</td>
+					</tr>
+
+				</table>
 
 
-				Target somewhere near a tower. After channeling for x seconds, you'll appear where you targeted. You can also double click it or target the fountain to go back there. TPing is very important (click <a>here</a> for more), but until you're more familiar with the game, you can just use these for quick transportation.
+				
 
 
 			</p>
