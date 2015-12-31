@@ -40,7 +40,7 @@
 			<p>Try finding those places on the minimap by clicking them, or click <a id="reveal">here</a> to reveal.</p>
 			<p>
 				<canvas id="mmLabel1" width="300" height="205"></canvas>
-				<script src="/js/dota/beginner/minimap1.js" type="text/javascript">
+				<script src="/js/dota/beginner/minimapBack.js" type="text/javascript">
 				//canvas2 context2
 				</script>
 				<!--<img src="/images/dota/beginner/minimap_orig.png" id="minimapO">-->
@@ -79,18 +79,19 @@
 			<p>Now, go walk to any lane. It doesn't matter which one, but generally you only want one person in the middle. They are also named intuitively: mid for the middle, bot for the lanes going toward the bottom, and top for the lanes going toward the top. Try out all three so you can familiarize yourself with the map. </p>
 			<p>
 
-				<canvas id="lanes" width="209" height="205"></canvas>
+				<img src="/images/dota/beginner/minimap_lanes.png">
+				<!--<canvas id="lanes" width="209" height="205"></canvas>-->
 
 				<script>
-					var canvas4 = document.getElementById("lanes");
-					var context4 = canvas4.getContext("2d");
-					var mmImg = new Image();
+					// var canvas4 = document.getElementById("lanes");
+					// var context4 = canvas4.getContext("2d");
+					// var mmImg = new Image();
 
-					mmImg.onload = function()
-					{
-						context4.drawImage(mmImg, 0, 0, 209, 205);
-					};
-					mmImg.src = "/images/dota/beginner/minimap_lanes.png";
+					// mmImg.onload = function()
+					// {
+					// 	context4.drawImage(mmImg, 0, 0, 209, 205);
+					// };
+					// mmImg.src = "/images/dota/beginner/minimap_lanes.png";
 				</script>
 			</p>
 			<p>You'll pass some towers on the way. These automatically attack enemies if they get close, so you can stay somewhat safe. When the clock reaches 0:00, creeps will spawn near your base and walk along the lanes. Eventually, they'll meet up with the enemy creeps and start attacking each other.</p>
@@ -104,7 +105,15 @@
 			<p>While laning, using your spells on an enemy that wanders too close is generally a good idea and can lead to kills, but remember if they get retreat to their tower, you'll want to back off. If the enemy tower starts attacking you, just run back until you're out of range.</p>
 			<p>For more information on how towers target enemies, click <a>here</a>.</p>
 			<p>If your opponents manage to get your health low, it's a good time to go back to base. It's a far walk, but luckily you can shorten one direction with a Town Portal Scroll.</p>
-			<p>[picture of tp] Target somewhere near a tower. After channeling for x seconds, you'll appear where you targeted. You can also double click it or target the fountain to go back there. TPing is very important (click <a>here</a> for more), but until you're more familiar with the game, you can just use these for quick transportation.</p>
+			<p>
+				<img src="/images/dota/items/tp.png" id="tpscroll" width="43" height="32">
+
+
+				Target somewhere near a tower. After channeling for x seconds, you'll appear where you targeted. You can also double click it or target the fountain to go back there. TPing is very important (click <a>here</a> for more), but until you're more familiar with the game, you can just use these for quick transportation.
+
+
+			</p>
+
 			<p>At some point, your creeps should push up to the enemy tower. This is a good time to attack it, because taking down a tower gives everyone on your team gold (you also need to if you want to attack the enemy ancient). There are four "tiers" of towers, each stronger than the previous, with the outermost starting at tier 1. The previous one must be destroyed for you to attack the next one, in a given lane. So to attack a mid tier 2, you only need to destroy the mid tier 1, not bot or top. </p>
 			<p>
 				<canvas id="tiers" width="209" height="205"></canvas>
@@ -120,7 +129,7 @@
 						drawStroked2(context5, "T1", 16, 4, "black", "white", 95, 128);
 						drawStroked2(context5, "T2", 16, 4, "black", "white", 71, 145);
 						drawStroked2(context5, "T3", 16, 4, "black", "white", 56, 161);
-						drawStroked2(context5, "(2) T4s", 16, 4, "black", "white", 46, 178);
+						drawStroked2(context5, "(2) T4s", 16, 4, "black", "white", 46, 180);
 					};
 					tierImg.src = "/images/dota/beginner/minimap_orig.png";
 

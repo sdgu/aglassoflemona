@@ -143,7 +143,7 @@ else if ((xC > 173) && (xC < 181) && (yC > 37) && (yC < 43))
 
 
 
-alert(xC + " " + yC);
+//alert(xC + " " + yC);
 
 }
 
