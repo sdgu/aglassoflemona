@@ -18,8 +18,20 @@ h3
 	border-bottom-style: dotted;
 }
 
+h4
+{
+	color: #3a99f7;
+
+}
+
+
 .itemDesc p
 {
 	margin: -5px 0px 0px 0px;
 	
+}
+
+#hotkeys td
+{
+	border: 1px solid black;
 }

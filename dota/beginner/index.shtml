@@ -22,10 +22,42 @@
 		<div id="beginnerpage">
 
 			<h2>The Minimalist Beginner's Guide to Dota</h2>
+
+			<p>
+				<ol>
+					<li><a href="#bground">Background</a></li>
+					<li><a href="#basics">Basics</a></li>
+					<ol type="a">
+						<li><a href="#shopping">Shopping</a></li>
+						<li><a href="#toLane">To the Lane!</a></li>
+						<li><a href="#inLane">In the Lane</a></li>
+						<li><a href="#pushing">Pushing</a></li>
+					</ol>
+
+					<li><a href="#jung">Other Parts of the Map</a></li>
+					<li><a href="#hotkeys">Hotkeys</a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+
+
+				</ol>
+
+			</p>
+
+
 			<p>Dota 2 is a great game.</p>
 			<p>Problem is, there are tons of mechanics that have made their way into the game, intentionally or not, and so many of them are just unnecessary if you're starting out. It's really uncomfortable trying to learn about an advanced when you don't even grasp the basics yet!</p>
 			<p>This guide will hopefully give you the bare minimum, intuitive mechanics to help you start out in the right direction.</p>
-			<h3>Background</h3>
+
+
+
+			<h3 id="bground">Background</h3>
+
+
+
+
 			<p>Dota is a 5v5 game. You'll either start in the bottom left (Radiant) or top right (Dire) of the map. The place where you spawn and respawn (the fountain) will restore your Health and Mana if they aren't full, so you'll want to return there when you're low to avoid being killed.</p>
 			<p>[radiant fountain image] [dire fountain image]</p>
 			<p>Near that is the ancient. Once enough towers have been destroyed, the opponent can start attacking it--if it dies, you lose.</p>
@@ -47,7 +79,13 @@
 			</p>
 			<p>(The water drop-shaped thing is where you are).</p>
 			<p>Lastly, don't be discouraged if you face an opponent who wrecks your team. Some experienced players make new accounts to play with their newer friends or get a new rating. The system generally does a good job of getting them out of the beginner pool quickly.</p>
-			<h3>Basics</h3>
+
+
+
+			<h3 id="basics">Basics</h3>
+
+
+
 			<p>When you spawn, buy some items. If you open the shop, there are suggested items. Just follow those for a while. You can also use community hero guides for more hero-specific tips.</p>
 			<p>[pictures of suggested items and where to find community guides]</p>
 			<p>The three important ones are Tangoes, Healing Salve, and Clarity. </p>
@@ -99,23 +137,18 @@
 
 
 				</script>
-
-				
-
-			</p>
-			<p>
-
-				
 			</p>
 
-			<p>
-				
-
-
-				
-			</p>
 			<p>For more information on starting items, click <a>here</a>.</p>
-			<p>shopping</p>
+			<h4 id="shopping">Shopping</h4>
+			<p>shopping things</p>
+
+
+
+			<h4 id="toLane">To the Lane!</h4>
+
+
+
 			<p>Now, go walk to any lane. It doesn't matter which one, but generally you only want one person in the middle. They are also named intuitively: mid for the middle, bot for the lanes going toward the bottom, and top for the lanes going toward the top. Try out all three so you can familiarize yourself with the map. </p>
 			<p>
 
@@ -134,16 +167,32 @@
 					// mmImg.src = "/images/dota/beginner/minimap_lanes.png";
 				</script>
 			</p>
-			<p>You'll pass some towers on the way. These automatically attack enemies if they get close, so you can stay somewhat safe. When the clock reaches 0:00, creeps will spawn near your base and walk along the lanes. Eventually, they'll meet up with the enemy creeps and start attacking each other.</p>
+			<p>You'll pass some towers on the way. These automatically attack enemies if they get close, so you can stay somewhat safe.</p>
+
+			<h4 id="inLane">In the Lane</h4>
+
+			<p>
+				When the clock reaches 0:00, creeps will spawn near your base and walk along the lanes. Eventually, they'll meet up with the enemy creeps and start attacking each other.
+			</p>
+
 			<p>[clock] [creeps fighting, also exp range]</p>
+
 			<p>When an enemy creep dies, you'll get experience if you're within range. It's pretty big, so you don't need to hug them.</p>
+
 			<p>However, if you want gold, you need to get the last hit on the enemy. It's exactly what it sounds like: you deal the killing blow (by right clicking it). Don't be discouraged if you miss a lot. It takes a lot of practice to last hit well.</p>
+
 			<p>For more details on last hitting and laning mechanics, click <a>here</a>.</p>
+
 			<p>Eventually, you'll have some levels, and therefore spells. The best way to learn what they do is read the description, and then use it! </p>
-			<p>There are various spells that “control” an opponent, in that they'll be slower, won't be able to move, won't be able to move or cast spells, etc. These are good at killing the opponent, especially when paired up with your lane partner. </p>
+
+			<p>There are various spells that "control" an opponent, in that they'll be slower, won't be able to move, won't be able to move or cast spells, etc. These are good at killing the opponent, especially when paired up with your lane partner. </p>
+
 			<p>Killing the opponent is good because it makes you stronger and makes the opponent weaker. You get more gold and exp than killing creeps and the opponent loses gold! Later in the game, it takes a long time for the opponent to respawn after they die, so you can take these opportunities to kill more buildings.</p>
-			<p>While laning, using your spells on an enemy that wanders too close is generally a good idea and can lead to kills, but remember if they get retreat to their tower, you'll want to back off. If the enemy tower starts attacking you, just run back until you're out of range.</p>
-			<p>For more information on how towers target enemies, click <a>here</a>.</p>
+
+			<p>While laning, using your spells on an enemy that wanders too close is generally a good idea and can lead to kills, but remember if they retreat to their tower, you'll want to back off. If the enemy tower starts attacking you, just run back until you're out of range.</p>
+
+			<p>For more information on how towers target enemies and other details, click <a>here</a>.</p>
+
 			<p>If your opponents manage to get your health low, it's a good time to go back to base. It's a far walk, but luckily you can shorten one direction with a Town Portal Scroll.</p>
 			<p>
 
@@ -159,13 +208,12 @@
 
 				</table>
 
-
-				
-
-
 			</p>
 
-			<p>At some point, your creeps should push up to the enemy tower. This is a good time to attack it, because taking down a tower gives everyone on your team gold (you also need to if you want to attack the enemy ancient). There are four "tiers" of towers, each stronger than the previous, with the outermost starting at tier 1. The previous one must be destroyed for you to attack the next one, in a given lane. So to attack a mid tier 2, you only need to destroy the mid tier 1, not bot or top. </p>
+
+			<h4 id="pushing">Pushing</h4>
+
+			<p>At some point, your creeps should push up to the enemy tower. This is a good time to attack it with your right click, because taking down a tower gives everyone on your team gold (you also need to if you want to attack the enemy ancient). There are four "tiers" of towers, each stronger than the previous, with the outermost starting at tier 1. The previous one must be destroyed for you to attack the next one, in a given lane. So to attack a mid tier 2, you only need to destroy the mid tier 1, not bot or top. </p>
 			<p>
 				<canvas id="tiers" width="209" height="205"></canvas>
 				<script>
@@ -194,9 +242,128 @@
 			<p>[picture of T3 and rax]</p>
 			<p>If you destroy a tier 3, you can attack the opponents' barracks. Destroying them actually makes your creeps in that lane stronger, with one corresponding to the ranged creeps and one to the melee creeps (note in League there is just one, and it's called an inhibitor, which is more accurate).</p>
 			<p>These powered up creeps give your team a good advantage, so often times it's safer to back up after killing one or both rax.</p>
-			<h3>Other Parts of the Map</h3>
+
+
+			<h3 id="jung">Other Parts of the Map</h3>
+
+
 			<p></p>
 			<p></p>
+			<p></p>
+			<p></p>
+			<h3 id="hotkeys">Hotkeys</h3>
+			<p>I don't think the default hotkey templates are very good. First of all, most of them use qwedfr as abilities. Generally, you want your hand to rest over these (qwer) so you can react by casting a spell without fumbling (also your fingers aren't spread all over the keyboard, nice for reducing stress). That would be fine if the only thing you do is cast spells. However, you also want item hotkeys, attack move, stop, control groups, etc. as you get more experienced. This basically means you'll be using the zxcvbn row as well, but then you have to move your fingers two rows.</p>
+			<p>What I suggest is using asd(cv)f for abilities, which happens to be the home row. First of all, this is one way people are taught to type, so if that's you, this is probably more comfortable. Second, the physical keyboard rows are are usually staggered in a way that moving up and down from the home row is easier. For example, rest your hands on qwer move your middle finger up. The most natural movement puts my middle finger between 3 and 4 on both my external and laptop keyboards.</p>
+			<p>I personally only use two mouse buttons (front and back that your thumb can press), and I usually never put targeted items on them. I find that pressing them causes my mouse to shift a bit and makes targeting a bit uncomfortable. However, some people don't have this problem.</p>
+			<p>For the rest of the hotkeys, it's best to try out different combinations. Note that Alt + hotkey is a separate hotkey that you can use to minimize finger stretching. My setup is as follows:</p>
+			<p>
+				<table id="hotkeys">
+					<tr>
+						<td>
+							a s d (c v) f
+						</td>
+						<td>
+							Abilities
+						</td>
+					</tr>
+					<tr>
+						<td>
+							q w r t Mouse5 Mouse6
+						</td>
+						<td>
+							Items
+						</td>
+					</tr>
+					<tr>
+						<td>
+							z
+						</td>
+						<td>
+							Attack Move
+						</td>
+					</tr>
+					<tr>
+						<td>
+							x
+						</td>
+						<td>
+							Stop
+						</td>
+					</tr>
+					<tr>
+						<td>
+							g
+						</td>
+						<td>
+							Level Up (I recommend this because sometimes you level up in a fight and want to be able to quickly cast a stronger spell / ultimate)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							e
+						</td>
+						<td>
+							Chat Wheel (Communication and memes, what could go wrong?)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Space
+						</td>
+						<td>
+							Select Hero (Double tap to center the camera)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							alt+q
+						</td>
+						<td>
+							Select All Units
+						</td>
+					</tr>
+					<tr>
+						<td>
+							alt+w
+						</td>
+						<td>
+							Select All Other Units
+						</td>
+					</tr>
+					<tr>
+						<td>
+							alt+ert
+						</td>
+						<td>
+							Control Groups (You basically never need more than 3 tbh)
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+						</td>
+					</tr>
+				</table>
+
+
+			</p>
+			<p>If you use non-American keyboards or a different layout, you can also consider using hotkeys by location.</p>
+			<p>One thing I highly recommend is binding select hero to a very easily accessible key, like space. As a beginner, you can double tap it to center the camera back on yourself--useful if you get lost. As you gain more experience, you will want to look around the map a lot, so having a quick and easy way to get back to your hero is nice.</p>
+			<p>Lastly, a bit on quickcasting. For me, there are certain spells that I prefer using quickcast on. They're the "clutch" spells, like Dazzle's <a>Shallow Grave</a> or Terrorblade's <a>Sunder</a>. For example, if I'm stunned as Terrorblade, I'll put my mouse cursor over the enemy and spam Sunder, which is noticeably faster than if you have to click every time as well. Once again, this is for you to explore.</p>
+			<p>For more settings related information, click <a>here</a></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+
+
+
+
 
 		</div>
 
