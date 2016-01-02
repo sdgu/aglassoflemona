@@ -9,47 +9,58 @@ el.onclick = drawAll;
 
 function drawAll()
 {
-    context2.beginPath();
-    context2.arc(18, 188, 15, 0, 2 * Math.PI);
+    // context2.beginPath();
+    // context2.arc(18, 188, 15, 0, 2 * Math.PI);
 
-    context2.lineWidth = 3;
-    context2.strokeStyle = "green";
-    context2.stroke();
+    // context2.lineWidth = 3;
+    // context2.strokeStyle = "green";
+    // context2.stroke();
 
-    drawStroked("Radiant Fountain", 34, 191);
+    // drawStroked("Radiant Fountain", 34, 191);
 
-    context2.beginPath();
-    context2.arc(33, 175, 5, 0, 2 * Math.PI);
+    // context2.beginPath();
+    // context2.arc(33, 175, 5, 0, 2 * Math.PI);
 
-    context2.lineWidth = 3;
-    context2.strokeStyle = "#00e600";
-    context2.stroke();
+    // context2.lineWidth = 3;
+    // context2.strokeStyle = "#00e600";
+    // context2.stroke();
 
-    drawStroked("Radiant Ancient", 38, 179);
+    // drawStroked("Radiant Ancient", 38, 179);
 
-    context2.beginPath();
-    context2.arc(192, 21, 15, 0, 2 * Math.PI);
+    // context2.beginPath();
+    // context2.arc(192, 21, 15, 0, 2 * Math.PI);
 
-    context2.lineWidth = 3;
-    context2.strokeStyle = "red";
-    context2.stroke();
+    // context2.lineWidth = 3;
+    // context2.strokeStyle = "red";
+    // context2.stroke();
 
-    drawStroked("Dire Fountain", 214, 24);
+    // drawStroked("Dire Fountain", 214, 24);
 
-    context2.beginPath();
-    context2.arc(177, 40, 5, 0, 2 * Math.PI);
+    // context2.beginPath();
+    // context2.arc(177, 40, 5, 0, 2 * Math.PI);
 
-    context2.lineWidth = 3;
-    context2.strokeStyle = "#ff3333";
-    context2.stroke();
+    // context2.lineWidth = 3;
+    // context2.strokeStyle = "#ff3333";
+    // context2.stroke();
 
-    drawStroked("Dire Ancient", 186, 46);
+    // drawStroked("Dire Ancient", 186, 46);
 
+    drawCircle(context2, 18, 188, 15, 3, "green", scaleBack);
+    drawStroked2(context2, "Radiant Fountain", 12, 3, "black", "white", 35, 192, scaleBack);
 
+    drawCircle(context2, 33, 175, 5, 3, "#00e600", scaleBack);
+    drawStroked2(context2, "Radiant Ancient", 12, 3, "black", "white", 38, 179, scaleBack);
+        
+    drawCircle(context2, 192, 21, 15, 3, "red", scaleBack);
+    drawStroked2(context2, "Dire Fountain", 12, 3, "black", "white", 214, 24, scaleBack);
+
+    drawCircle(context2, 177, 40, 5, 3, "#ff3333", scaleBack);
+    drawStroked2(context2, "Dire Ancient", 12, 3, "black", "white", 186, 46, scaleBack);
+        
 }
 
 
-    scaleBack = 1;
+    scaleBack = 1.5;
 
 imageObj3.onload = function()
 {
@@ -72,14 +83,6 @@ imageObj3.onload = function()
 
 
             drawCircle(context2, 18, 188, 15, 3, "green", scaleBack);
-
-            // context2.beginPath();
-            // context2.arc(18, 188, 15, 0, 2 * Math.PI);
-
-            // context2.lineWidth = 3;
-            // context2.strokeStyle = "green";
-            // context2.stroke();
-
             drawStroked2(context2, "Radiant Fountain", 12, 3, "black", "white", 35, 192, scaleBack);
 
 
@@ -90,39 +93,21 @@ imageObj3.onload = function()
         {
 
             drawCircle(context2, 33, 175, 5, 3, "#00e600", scaleBack);
-
-            // context2.beginPath();
-            // context2.arc(33, 175, 5, 0, 2 * Math.PI);
-
-            // context2.lineWidth = 3;
-            // context2.strokeStyle = "#00e600";
-            // context2.stroke();
-
             drawStroked2(context2, "Radiant Ancient", 12, 3, "black", "white", 38, 179, scaleBack);
         }
 
-        else if ((xC > 185) && (xC < 199) && (yC > 13) && (yC < 29))
+        else if (isInsideRect(xC, yC, 185, 199, 12, 29, scaleBack))
+        //((xC > 185) && (xC < 199) && (yC > 13) && (yC < 29))
         {
-        	context2.beginPath();
-        	context2.arc(192, 21, 15, 0, 2 * Math.PI);
-
-        	context2.lineWidth = 3;
-        	context2.strokeStyle = "red";
-        	context2.stroke();
-
-        	drawStroked("Dire Fountain", 214, 24);
+            drawCircle(context2, 192, 21, 15, 3, "red", scaleBack);
+        	drawStroked2(context2, "Dire Fountain", 12, 3, "black", "white", 214, 24, scaleBack);
         }
 
-        else if ((xC > 172) && (xC < 182) && (yC > 36) && (yC < 44))
+        else if (isInsideRect(xC, yC, 172, 182, 36, 44, scaleBack))
+        //((xC > 172) && (xC < 182) && (yC > 36) && (yC < 44))
         {
-        	context2.beginPath();
-            context2.arc(177, 40, 5, 0, 2 * Math.PI);
-
-            context2.lineWidth = 3;
-            context2.strokeStyle = "#ff3333";
-            context2.stroke();
-
-            drawStroked("Dire Ancient", 186, 46);
+            drawCircle(context2, 177, 40, 5, 3, "#ff3333", scaleBack);
+            drawStroked2(context2, "Dire Ancient", 12, 3, "black", "white", 186, 46, scaleBack);
         }
 
 

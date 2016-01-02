@@ -72,7 +72,7 @@
 			</p>
 			<p>Try finding those places on the minimap by clicking them, or click <a id="reveal">here</a> to reveal.</p>
 			<p>
-				<canvas id="mmLabel1" width="600" height="410"></canvas>
+				<canvas id="mmLabel1" width="450" height="308"></canvas>
 				<script src="/js/dota/beginner/minimapBack.js" type="text/javascript">
 				//canvas2 context2
 				</script>
@@ -150,7 +150,7 @@
 			<p>Try finding the secret shops on the map by clicking them, or click <a id="revealSecret">here</a> to reveal.</p>
 			<p>
 				
-				<canvas id="secret" width="420" height="410"></canvas>
+				<canvas id="secret" width="450" height="308"></canvas>
 
 				<script>
 				//[replaced by the ping !s if clicked] 
@@ -162,10 +162,13 @@
 
 					function drawAllSecretShops()
 					{
-
+						drawCircle(ctxSecret, 50, 86, 5, 2, "green", scaleSecret);
+       					drawStroked2(ctxSecret, "Radiant Secret Shop", 12, 4, "black", "white", 57, 89, scaleSecret);
+       					drawCircle(ctxSecret, 144, 99, 5, 2, "red", scaleSecret);
+       					drawStroked2(ctxSecret, "Dire Secret Shop", 12, 4, "black", "white", 151, 102, scaleSecret);
 					}
 
-					scaleSecret = 1;
+					scaleSecret = 1.5;
 
 					var canSecret = document.getElementById("secret");
 					var ctxSecret = canSecret.getContext("2d");
@@ -197,13 +200,18 @@
        						}
 
        						//dire
-       						//tl 
-       						//tr 
-       						//br 
-       						//bl 
+       						//tl 138, 94
+       						//tr 146, 94
+       						//br 146, 101
+       						//bl 138, 101
+       						else if (isInsideRect(x, y, 138, 146, 94, 102, scaleSecret))
+       						{
+       							drawCircle(ctxSecret, 144, 99, 5, 2, "red", scaleSecret);
+       							drawStroked2(ctxSecret, "Dire Secret Shop", 12, 4, "black", "white", 151, 102, scaleSecret);
+       						}
 
 
-       						alert(x + " " + y);
+       						//alert(x + " " + y);
 						}
 						//drawStroked2(ctxSecret, "test", 12, 4, "black", "white", 50, 50);
 
