@@ -211,7 +211,7 @@
        						}
 
 
-       						//alert(x + " " + y);
+       						alert(x / scaleSecret + " " + y / scaleSecret);
 						}
 						//drawStroked2(ctxSecret, "test", 12, 4, "black", "white", 50, 50);
 
@@ -311,20 +311,33 @@
 
 			<p>At some point, your creeps should push up to the enemy tower. This is a good time to attack it with your right click, because taking down a tower gives everyone on your team gold (you also need to if you want to attack the enemy ancient). There are four "tiers" of towers, each stronger than the previous, with the outermost starting at tier 1. The previous one must be destroyed for you to attack the next one, in a given lane. So to attack a mid tier 2, you only need to destroy the mid tier 1, not bot or top. </p>
 			<p>
-				<canvas id="tiers" width="209" height="205"></canvas>
+				<canvas id="tiers" width="450" height="308"></canvas>
 				<script>
 					
 					var canvas5 = document.getElementById("tiers");
 					var context5 = canvas5.getContext("2d");
 					var tierImg = new Image();
 
+					scaleTiers = 1.5;
+
 					tierImg.onload = function()
 					{
-						context5.drawImage(tierImg, 0, 0, 209, 205);
-						drawStroked2(context5, "T1", 16, 4, "black", "white", 95, 128);
-						drawStroked2(context5, "T2", 16, 4, "black", "white", 71, 145);
-						drawStroked2(context5, "T3", 16, 4, "black", "white", 56, 161);
-						drawStroked2(context5, "(2) T4s", 16, 4, "black", "white", 46, 180);
+						context5.drawImage(tierImg, 0, 0, 209 * scaleTiers, 205 * scaleTiers);
+						drawStroked2(context5, "T1", 16, 4, "black", "white", 95, 128, scaleTiers);
+						//87, 123
+						drawCircle(context5, 88, 124, 6, 2, "#00e600", scaleTiers);
+
+						drawStroked2(context5, "T2", 16, 4, "black", "white", 71, 145, scaleTiers);
+						//64, 140
+						drawCircle(context5, 64, 140, 6, 2, "#00e600", scaleTiers);
+
+						drawStroked2(context5, "T3", 16, 4, "black", "white", 56, 161, scaleTiers);
+						//43, 156
+						drawCircle(context5, 50, 157, 6, 2, "#00e600", scaleTiers);
+
+						drawStroked2(context5, "(2) T4s", 16, 4, "black", "white", 46, 180, scaleTiers);
+						//37, 168
+						drawCircle(context5, 38, 169, 8, 3, "#00e600", scaleTiers);
 					};
 					tierImg.src = "/images/dota/beginner/minimap_orig.png";
 
