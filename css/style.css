@@ -186,3 +186,10 @@ input:hover
 
 }
 
+.external
+{
+  background: transparent url("/images/external_link.png") no-repeat scroll right center;
+  padding-right: 22px;
+  padding-bottom: 2px;
+  font-weight: normal;
+}

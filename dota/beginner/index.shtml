@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/sidebarStyle.css">
 	<link rel="stylesheet" href="/css/dotabegStyle.css">
+	<script src="/js/canvasFunctions.js" type="text/javascript"></script>
 
 
 	<!--https://www.nuget.org/packages/Dota2/-->
@@ -71,7 +72,7 @@
 			</p>
 			<p>Try finding those places on the minimap by clicking them, or click <a id="reveal">here</a> to reveal.</p>
 			<p>
-				<canvas id="mmLabel1" width="300" height="205"></canvas>
+				<canvas id="mmLabel1" width="600" height="410"></canvas>
 				<script src="/js/dota/beginner/minimapBack.js" type="text/javascript">
 				//canvas2 context2
 				</script>
@@ -141,7 +142,94 @@
 
 			<p>For more information on starting items, click <a>here</a>.</p>
 			<h4 id="shopping">Shopping</h4>
-			<p>shopping things</p>
+
+			<p>Starting out, you're going to want to use the suggested items. Besides just being good for beginners, it also means you don't have to search the shop interface for the item you want.</p>
+			<p>If you left click an item, there will be a tree that shows you what other items you need to make it. Simply right click an item to buy it. If you're in the fountain and you have inventory space, it will go into your inventory. If you aren't in base, it will go into your stash, and you can pick it up when you return.</p>
+			<p>[image of item tree]</p>
+			<p>Unfortunately, not all items can be bought from the fountain. There are two secret shops, one for each side. On the minimap, the Radiant secret shop is just right of the top tier 1 tower, and the Dire secret shop is below the mid tier 2 and to the right of the mid tier 1. Their icon is a small beige rectangle. If you try to buy an item that requires the secret shop, two yellow !s will appear on the minimap as well.</p>
+			<p>Try finding the secret shops on the map by clicking them, or click <a id="revealSecret">here</a> to reveal.</p>
+			<p>
+				
+				<canvas id="secret" width="420" height="410"></canvas>
+
+				<script>
+				//[replaced by the ping !s if clicked] 
+
+					
+
+					var elSecret = document.getElementById("revealSecret");
+					elSecret.onclick = drawAllSecretShops;
+
+					function drawAllSecretShops()
+					{
+
+					}
+
+					scaleSecret = 1;
+
+					var canSecret = document.getElementById("secret");
+					var ctxSecret = canSecret.getContext("2d");
+					var mmSImg = new Image();
+
+					mmSImg.onload = function()
+					{
+						
+						ctxSecret.drawImage(mmSImg, 0, 0, 209 * scaleSecret, 205 * scaleSecret);
+						canSecret.onclick = function(e)
+						{
+
+							var rect = canSecret.getBoundingClientRect(),
+        					x = e.clientX - rect.left,
+       						y = Math.floor(e.clientY - rect.top);
+
+
+       						//radiant
+       						//tl 45, 82
+       						//tr 53, 82
+       						//br 53, 87
+       						//bl 45, 87
+
+       						if (isInsideRect(x, y, 45, 53, 80, 88, scaleSecret))
+       							//(x > 45) && (x < 53) && (y > 80) && (y < 88))
+       						{
+       							drawCircle(ctxSecret, 50, 86, 5, 2, "green", scaleSecret);
+       							drawStroked2(ctxSecret, "Radiant Secret Shop", 12, 4, "black", "white", 57, 89, scaleSecret);
+       						}
+
+       						//dire
+       						//tl 
+       						//tr 
+       						//br 
+       						//bl 
+
+
+       						alert(x + " " + y);
+						}
+						//drawStroked2(ctxSecret, "test", 12, 4, "black", "white", 50, 50);
+
+					};
+					mmSImg.src = "/images/dota/beginner/minimap_orig.png";
+
+				</script>
+
+
+			</p>
+			<p>They are a bit out of the way, but luckily there is an animal courier that will bring you your items. After 3 minutes, it can be upgraded to fly, making it faster and able to go over terrain. Here those are in the shop.</p>
+			<p>[picture of couriers in shop]</p>
+			<p>Be careful, as the opponent can kill it.</p>
+			<p>Luckily there are three buttons near the bottom right that make it easy to use the courier.</p>
+			<p>[courier buttons]</p>
+			<p>The first one selects the courier for you. After clicking it, you can move it to the secret shop to buy the item for you!</p>
+			<p>The second button tells the courier to pick up items in your stash (if you have any) and deliver all your items to you. This allows you to receive your items even if you aren't in the fountain. You can send the courier to the secret shop, buy your item, and then press this button to have it delivered to you.</p>
+			<p>The last button makes the courier faster for a short period of time. It's useful if you have to fly the courier over dangerous areas.</p>
+			<p>Initially don't worry about using the courier to deliver your items if it seems like a lot of trouble. Micro is hard to grasp when you first start out and it's perfectly fine to go back to base to get your items. After you feel comfortable with the map and controlling your own hero, however, it is highly advisable to learn how to use the courier, because it's a staple item at all levels of play.</p>
+			<p>Click <a>here</a> for more information about shops and couriers.</p>
+			<p></p>
+			<p></p>
+			<p></p>
+
+
+
 
 
 
@@ -350,7 +438,7 @@
 			</p>
 			<p>If you use non-American keyboards or a different layout, you can also consider using hotkeys by location.</p>
 			<p>One thing I highly recommend is binding select hero to a very easily accessible key, like space. As a beginner, you can double tap it to center the camera back on yourself--useful if you get lost. As you gain more experience, you will want to look around the map a lot, so having a quick and easy way to get back to your hero is nice.</p>
-			<p>Lastly, a bit on quickcasting. For me, there are certain spells that I prefer using quickcast on. They're the "clutch" spells, like Dazzle's <a>Shallow Grave</a> or Terrorblade's <a>Sunder</a>. For example, if I'm stunned as Terrorblade, I'll put my mouse cursor over the enemy and spam Sunder, which is noticeably faster than if you have to click every time as well. Once again, this is for you to explore.</p>
+			<p>Lastly, a bit on quickcasting. For me, there are certain spells that I prefer using quickcast on. They're the "clutch" spells, like Dazzle's <a class="external" target="_blank">Shallow Grave</a> or Terrorblade's <a class="external" target="_blank">Sunder</a>. For example, if I'm stunned as Terrorblade, I'll put my mouse cursor over the enemy and spam Sunder, which is noticeably faster than if you have to click every time as well. Once again, this is for you to explore.</p>
 			<p>For more settings related information, click <a>here</a></p>
 			<p></p>
 			<p></p>
