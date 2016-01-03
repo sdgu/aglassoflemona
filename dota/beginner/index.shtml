@@ -225,7 +225,7 @@
 							<img src="/images/dota/items/tango.png" id="tangoPic" width="43" height="32">
 						</td>
 						<td>
-							<p>Target a tree to eat it. Doing so gives you some extra health regeneration, and more importantly, you don't lose the regen if you take damage.</p>
+							<p>Target a <a class="eeTree">tree</a> to eat it. Doing so gives you some extra health regeneration, and more importantly, you don't lose the regen if you take damage.</p>
 						</td>
 					</tr>
 					<tr>
@@ -251,8 +251,34 @@
 
 				<!--<canvas id="tango" width="43" height="32"></canvas>-->
 
-				<script>
 
+			</p>
+
+			<p>For more information on starting items, click <a>here</a>.</p>
+			<h4 id="shopping">Shopping</h4>
+
+			<p>Starting out, you're going to want to use the suggested items. Besides just being good for beginners, it also means you don't have to search the shop interface for the item you want.</p>
+			<p>If you left click an item, there will be a <a class="eeTree">tree</a> that shows you what other items you need to make it. Simply right click an item to buy it. If you're in the fountain and you have inventory space, it will go into your inventory. If you aren't in base, it will go into your stash, and you can pick it up when you return.</p>
+
+				<script>
+				var treeText = document.getElementsByClassName("eeTree");
+
+				//if (recentlyClicked == "tangoPic")
+				{
+					
+					
+					treeText[0].onclick = coolThing;
+					treeText[1].onclick = coolThing;
+				}
+
+				function coolThing()
+				{
+					if (recentlyClicked == "tangoPic")
+					{
+						alert("easter egg");
+					}
+					
+				}
 					// var canvas3 = document.getElementById("tango");
 					// var context3 = canvas3.getContext("2d");
 					// var tangoImg = new Image();
@@ -265,13 +291,7 @@
 
 
 				</script>
-			</p>
 
-			<p>For more information on starting items, click <a>here</a>.</p>
-			<h4 id="shopping">Shopping</h4>
-
-			<p>Starting out, you're going to want to use the suggested items. Besides just being good for beginners, it also means you don't have to search the shop interface for the item you want.</p>
-			<p>If you left click an item, there will be a tree that shows you what other items you need to make it. Simply right click an item to buy it. If you're in the fountain and you have inventory space, it will go into your inventory. If you aren't in base, it will go into your stash, and you can pick it up when you return.</p>
 			<p>[image of item tree]</p>
 			<p>Unfortunately, not all items can be bought from the fountain. There are two secret shops, one for each side. On the minimap, the Radiant secret shop is just right of the top tier 1 tower, and the Dire secret shop is below the mid tier 2 and to the right of the mid tier 1. Their icon is a small beige rectangle. If you try to buy an item that requires the secret shop, two yellow !s will appear on the minimap as well.</p>
 			<p>Try finding the secret shops on the map by clicking them, or click <a id="revealSecret">here</a> to reveal.</p>
