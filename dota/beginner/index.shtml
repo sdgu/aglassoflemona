@@ -211,7 +211,7 @@
        						}
 
 
-       						alert(x / scaleSecret + " " + y / scaleSecret);
+       						//alert(x / scaleSecret + " " + y / scaleSecret);
 						}
 						//drawStroked2(ctxSecret, "test", 12, 4, "black", "white", 50, 50);
 
