@@ -44,46 +44,41 @@
 
 	<script>
 
-	$(document).mousedown(function(ev)
-	{
-		
-
-    	if(ev.which == 3)
-        {
-      		
-      		{
-      			alert("Right mouse button clicked on element with id myId");
-      		}	
-      	
-        }
-    
-});
-
+	
 
 	$(document).on('click', function(event) 
 	{
 		if ($(event.target).closest('.itemDesc img').length)
 		{
-			
+			if (event.which == 3)
+			{
+				//alert("pasta");
+			}
+			if (event.which == 1)
+			{
 			targetting = 1;
 			document.body.style.cursor = "url('/images/dota/cursors/itemEasterEggTest.png') 16 16, default";
-			if (event.target.id == "tangoPic") recentlyClicked = "tangoPic";
-			if (event.target.id == "clarityPic") recentlyClicked = "clarityPic";
-			if (event.target.id == "salvePic") 
-			{	
-				recentlyClicked = "salvePic";
-				//alert(event.target.id);
-			}
-			if (event.target.id == "tpPic") 
-			{	
-				recentlyClicked = "tpPic";
-				//alert(event.target.id);
+			
+			
+				if (event.target.id == "tangoPic") recentlyClicked = "tangoPic";
+				if (event.target.id == "clarityPic") recentlyClicked = "clarityPic";
+				if (event.target.id == "salvePic") 
+				{	
+					recentlyClicked = "salvePic";
+					//alert(event.target.id);
+				}
+				if (event.target.id == "tpPic") 
+				{	
+					recentlyClicked = "tpPic";
+					//alert(event.target.id);
+				}
 			}
 		}
 
 		if (!$(event.target).closest('.itemDesc img').length)// || !$(event.target).closest("#salvePic").length) 
 		{
     		targetting = 0;
+    		
 			document.body.style.cursor = "url('/images/dota/cursors/default_blur.png'), default";
 			if (recentlyClicked == "tangoPic") 
 			{
