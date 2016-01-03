@@ -8,6 +8,13 @@
 	<link rel="stylesheet" href="/css/sidebarStyle.css">
 	<link rel="stylesheet" href="/css/dotabegStyle.css">
 	<script src="/js/canvasFunctions.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script> 
+		var recentlyClicked = "";
+		var targetting = 0; 
+		var tangoTarg = 0;
+
+	</script>
 
 
 	<!--https://www.nuget.org/packages/Dota2/-->
@@ -16,6 +23,87 @@
 </head>
 
 <body>
+
+	<audio id="playTango" controls hidden>
+		<source src="/sounds/dota/items/Tango.mp3" type="audio/mpeg">
+			Failed.
+	</audio>
+	<audio id="playSalve" controls hidden>
+		<source src="/sounds/dota/items/Salve.mp3" type="audio/mpeg">
+			Failed.
+	</audio>
+	<audio id="playClarity" controls hidden>
+		<source src="/sounds/dota/items/Clarity.mp3" type="audio/mpeg">
+			Failed.
+	</audio>
+
+	<script>
+
+	$(document).mousedown(function(ev)
+	{
+		
+
+    	if(ev.which == 3)
+        {
+      		
+      		{
+      			alert("Right mouse button clicked on element with id myId");
+      		}	
+      	
+        }
+    
+});
+
+
+	$(document).on('click', function(event) 
+	{
+		if ($(event.target).closest('.itemDesc img').length)
+		{
+			
+			targetting = 1;
+			document.body.style.cursor = "url('/images/dota/cursors/itemEasterEggTest.png') 16 16, default";
+			if (event.target.id == "tangoPic") recentlyClicked = "tangoPic";
+			if (event.target.id == "clarityPic") recentlyClicked = "clarityPic";
+			if (event.target.id == "salvePic") recentlyClicked = "salvePic;"
+
+		}
+
+		if (!$(event.target).closest('.itemDesc img').length)// || !$(event.target).closest("#salvePic").length) 
+		{
+    		targetting = 0;
+			document.body.style.cursor = "url('/images/dota/cursors/default_blur.png'), default";
+			if (recentlyClicked == "tangoPic") 
+			{
+					var tangoSound = document.getElementById("playTango");
+					tangoSound.volume = 0.1;
+					tangoSound.play();
+
+					recentlyClicked = "";
+			}
+			if (recentlyClicked == "salvePic")
+			{
+				var salveSound = document.getElementById("playSalve");
+					salveSound.volume = 0.1;
+					salveSound.play();
+
+					recentlyClicked = "";
+			}
+		}
+
+		// if (!$(event.target).closest("#salvePic").length)
+		// {
+		// 	targetting = 0;
+		// 	document.body.style.cursor = "url('/images/dota/cursors/default_blur.png'), default";
+		// }
+
+		// if (!$(event.target).closest("#clarityPic").length)
+		// {
+		// 	targetting = 0;
+		// 	document.body.style.cursor = "url('/images/dota/cursors/default_blur.png'), default";
+		// }
+	});
+
+	</script>
 
 
 	<div id="dotawrapper">
@@ -92,10 +180,19 @@
 			<p>The three important ones are Tangoes, Healing Salve, and Clarity. </p>
 			<p>
 
+				<script>
+					// function target()
+					// {
+					// 	//alert("yay");
+					// 	targetting = 1;
+					// 	document.body.style.cursor = "url('/images/dota/cursors/itemEasterEggTest.png') 16 16, default";
+					// }
+				</script>
+
 				<table class="itemDesc">
 					<tr>
 						<td>
-							<img src="/images/dota/items/tango.png" width="43" height="32">
+							<img src="/images/dota/items/tango.png" id="tangoPic" width="43" height="32">
 						</td>
 						<td>
 							<p>Target a tree to eat it. Doing so gives you some extra health regeneration, and more importantly, you don't lose the regen if you take damage.</p>
@@ -103,7 +200,7 @@
 					</tr>
 					<tr>
 						<td>
-							<img src="/images/dota/items/salve.png" width="43" height="32">
+							<img src="/images/dota/items/salve.png" id="salvePic" width="43" height="32">
 						</td>
 						<td>
 							<p>Target yourself. Doing so gives you a lot of health regen, but if you take damage, you lose the regen.</p>
@@ -111,7 +208,7 @@
 					</tr>
 					<tr>
 						<td>
-							<img src="/images/dota/items/clarity.png" width="43" height="32">
+							<img src="/images/dota/items/clarity.png" id="clarityPic" width="43" height="32">
 						</td>
 						<td>
 							<p>Target yourself. Doing so gives you some extra mana regeneration, but if you take damage, you lose the regen.</p>
@@ -295,7 +392,7 @@
 				<table class="itemDesc">
 					<tr>
 						<td>
-							<img src="/images/dota/items/tp.png" class="itemDesc" width="43" height="32">
+							<img src="/images/dota/items/tp.png" width="43" height="32">
 						</td>
 						<td>
 							<p>Target somewhere near a tower. After channeling for x seconds, you'll appear where you targeted. You can also double click it or target the fountain to go back there. TPing is very important (click <a>here</a> for more), but until you're more familiar with the game, you can just use these for quick transportation.</p>
