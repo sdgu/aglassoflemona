@@ -37,6 +37,11 @@
 			Failed.
 	</audio>
 
+	<audio id="playTP" controls hidden>
+		<source src="/sounds/dota/items/Teleport.mp3" type="audio/mpeg">
+			Failed.
+	</audio>
+
 	<script>
 
 	$(document).mousedown(function(ev)
@@ -64,8 +69,16 @@
 			document.body.style.cursor = "url('/images/dota/cursors/itemEasterEggTest.png') 16 16, default";
 			if (event.target.id == "tangoPic") recentlyClicked = "tangoPic";
 			if (event.target.id == "clarityPic") recentlyClicked = "clarityPic";
-			if (event.target.id == "salvePic") recentlyClicked = "salvePic;"
-
+			if (event.target.id == "salvePic") 
+			{	
+				recentlyClicked = "salvePic";
+				//alert(event.target.id);
+			}
+			if (event.target.id == "tpPic") 
+			{	
+				recentlyClicked = "tpPic";
+				//alert(event.target.id);
+			}
 		}
 
 		if (!$(event.target).closest('.itemDesc img').length)// || !$(event.target).closest("#salvePic").length) 
@@ -75,20 +88,42 @@
 			if (recentlyClicked == "tangoPic") 
 			{
 					var tangoSound = document.getElementById("playTango");
-					tangoSound.volume = 0.1;
+					tangoSound.volume = 0.05;
 					tangoSound.play();
 
 					recentlyClicked = "";
 			}
 			if (recentlyClicked == "salvePic")
 			{
+				
 				var salveSound = document.getElementById("playSalve");
-					salveSound.volume = 0.1;
+					salveSound.volume = 0.05;
 					salveSound.play();
 
 					recentlyClicked = "";
 			}
+
+			if (recentlyClicked == "clarityPic")
+			{
+				
+				var claritySound = document.getElementById("playClarity");
+					claritySound.volume = 0.05;
+					claritySound.play();
+
+					recentlyClicked = "";
+			}
+
+			if (recentlyClicked == "tpPic")
+			{
+				
+				var tpSound = document.getElementById("playTP");
+					tpSound.volume = 0.03;
+					tpSound.play();
+
+					recentlyClicked = "";
+			}
 		}
+
 
 		// if (!$(event.target).closest("#salvePic").length)
 		// {
@@ -392,7 +427,7 @@
 				<table class="itemDesc">
 					<tr>
 						<td>
-							<img src="/images/dota/items/tp.png" width="43" height="32">
+							<img src="/images/dota/items/tp.png" id="tpPic" width="43" height="32">
 						</td>
 						<td>
 							<p>Target somewhere near a tower. After channeling for x seconds, you'll appear where you targeted. You can also double click it or target the fountain to go back there. TPing is very important (click <a>here</a> for more), but until you're more familiar with the game, you can just use these for quick transportation.</p>
