@@ -18,6 +18,11 @@ a:not(.eeTree)
 
 }
 
+#fountainRad
+{
+	margin: 0px 7px 0px 0px;
+}
+
 #beginnerpage
 {
 
@@ -52,3 +57,4 @@ h4
 	color: black;
 	/*cursor: url("/images/dota/cursors/default_blur.png"), auto; */
 }
+

@@ -178,7 +178,8 @@
 
 
 			<p>Dota is a 5v5 game. You'll either start in the bottom left (Radiant) or top right (Dire) of the map. The place where you spawn and respawn (the fountain) will restore your Health and Mana if they aren't full, so you'll want to return there when you're low to avoid being killed.</p>
-			<p>[radiant fountain image] [dire fountain image]</p>
+			<p><img src="/images/dota/beginner/fountain_radiant.png" id="fountainRad" width="242" height="151">  
+				  <img src="/images/dota/beginner/fountain_dire.png" width="242" height="151"></p>
 			<p>Near that is the ancient. Once enough towers have been destroyed, the opponent can start attacking it--if it dies, you lose.</p>
 			<p>
 
@@ -205,8 +206,8 @@
 
 
 
-			<p>When you spawn, buy some items. If you open the shop, there are suggested items. Just follow those for a while. You can also use community hero guides for more hero-specific tips.</p>
-			<p>[pictures of suggested items and where to find community guides]</p>
+			<p>When you spawn, buy some items by right clicking them in the shop. Upon opening the shop, you'll see suggested items; if you don't click the ? above Basics. Just follow those for a while. You can also use community hero guides for more hero-specific tips.</p>
+			<p><img src="/images/dota/beginner/shop_interface.png"></p>
 			<p>The three important ones are Tangoes, Healing Salve, and Clarity. </p>
 			<p>
 
@@ -418,7 +419,7 @@
 				When the clock reaches 0:00, creeps will spawn near your base and walk along the lanes. Eventually, they'll meet up with the enemy creeps and start attacking each other.
 			</p>
 
-			<p>[clock] [creeps fighting, also exp range]</p>
+			<p><img src="/images/dota/beginner/clock.png"> [creeps fighting, also exp range]</p>
 
 			<p>When an enemy creep dies, you'll get experience if you're within range. It's pretty big, so you don't need to hug them.</p>
 
@@ -495,7 +496,7 @@
 
 			</p>
 			<p>To attack the tier 3, you have to go up a hill. You'll notice that if you're at lower terrain, you can't see higher terrain. This gives the high ground an advantage, and yes, I will link this.</p>
-			<p>[picture of T3 and rax]</p>
+			<p><img src="/images/dota/beginner/t3rax.png" width="250" height="347"> <!--cirlce it better--></p>
 			<p>If you destroy a tier 3, you can attack the opponents' barracks. Destroying them actually makes your creeps in that lane stronger, with one corresponding to the ranged creeps and one to the melee creeps (note in League there is just one, and it's called an inhibitor, which is more accurate).</p>
 			<p>These powered up creeps give your team a good advantage, so often times it's safer to back up after killing one or both rax.</p>
 
@@ -503,10 +504,27 @@
 			<h3 id="jung">Other Parts of the Map</h3>
 
 
+			<p>As you probably noticed, lanes are only a small area of the whole map. On the way bot for Radiant, or top for Dire, there's an area called the jungle. There are many camps of neutral creeps that you can kill for gold and exp. However, it is difficult for most heroes at early levels, and not suitable for some heroes in general. So, starting out a good benchmark is waiting until 25 or 30 minutes before trying to kill camps. If there are no units (no creeps, no heroes) near the camp at each minute mark, new creeps will spawn.</p>
+			<p>These camps are located in the small clearings and indicated with small triangles on the minimap. secret shops</p>
+			<p>[minimap with jungle (creeps spawned), runes, rosh]</p>
+			<p>One of the exits of each jungle leads to the rune spots--one near the top left and one near the bottom right of the river. Every even-numbered minute, a rune will spawn at each of these. There are seven different ones in total, and give a variety of buffs. Honestly, it's a good idea to pick up the one closer to your lane every two minutes so you can get an idea of what they do, but remembering to do so comes with time.</p>
+			<p>Near the bot rune, there's a cave. You can't actually get vision of what's inside unless you enter. Inside is Roshan, a boss-like neutral creep. Upon killing him, he gives the team gold and drops an Aegis of the Immortal, which anyone can pick up. This item revives the holder if they die, but disappears after 5 minutes. 3-6 minutes later, Roshan respawns.</p>
+			<p>Later in the game, the Aegis is a powerful tool, so you can try taking Roshan with your team when opponents are respawning or far away. At early levels Roshan is usually hard to kill, and can be dangerous if the opponent comes, so it's not a bad idea to leave him alone.</p>
+			<p>For more information about all these, click here.</p>
 			<p></p>
 			<p></p>
 			<p></p>
 			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+			<p></p>
+
 			<h3 id="hotkeys">Hotkeys</h3>
 			<p>I don't think the default hotkey templates are very good. First of all, most of them use qwedfr as abilities. Generally, you want your hand to rest over these (qwer) so you can react by casting a spell without fumbling (also your fingers aren't spread all over the keyboard, nice for reducing stress). That would be fine if the only thing you do is cast spells. However, you also want item hotkeys, attack move, stop, control groups, etc. as you get more experienced. This basically means you'll be using the zxcvbn row as well, but then you have to move your fingers two rows.</p>
 			<p>What I suggest is using asd(cv)f for abilities, which happens to be the home row. First of all, this is one way people are taught to type, so if that's you, this is probably more comfortable. Second, the physical keyboard rows are are usually staggered in a way that moving up and down from the home row is easier. For example, rest your hands on qwer move your middle finger up. The most natural movement puts my middle finger between 3 and 4 on both my external and laptop keyboards.</p>
