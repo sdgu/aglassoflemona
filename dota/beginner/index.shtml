@@ -155,10 +155,10 @@
 
 					<li><a href="#jung">Other Parts of the Map</a></li>
 					<li><a href="#hotkeys">Hotkeys</a></li>
+					<!--<li><a href=""></a></li>
 					<li><a href=""></a></li>
 					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
+					<li><a href=""></a></li>-->
 
 
 				</ol>
@@ -259,7 +259,7 @@
 			<h4 id="shopping">Shopping</h4>
 
 			<p>Starting out, you're going to want to use the suggested items. Besides just being good for beginners, it also means you don't have to search the shop interface for the item you want.</p>
-			<p>If you left click an item, there will be a <a class="eeTree">tree</a> that shows you what other items you need to make it. Simply right click an item to buy it. If you're in the fountain and you have inventory space, it will go into your inventory. If you aren't in base, it will go into your stash, and you can pick it up when you return.</p>
+			<p>If you left click an item, there will be a <a class="eeTree">tree</a> (see above) that shows you what other items you need to make it. Simply right click an item to buy it. If you're in the fountain and you have inventory space, it will go into your inventory. If you aren't in base, it will go into your stash, and you can pick it up when you return.</p>
 
 				<script>
 				var treeText = document.getElementsByClassName("eeTree");
@@ -293,7 +293,7 @@
 
 				</script>
 
-			<p>[image of item tree]</p>
+			
 			<p>Unfortunately, not all items can be bought from the fountain. There are two secret shops, one for each side. On the minimap, the Radiant secret shop is just right of the top tier 1 tower, and the Dire secret shop is below the mid tier 2 and to the right of the mid tier 1. Their icon is a small beige rectangle. If you try to buy an item that requires the secret shop, two yellow !s will appear on the minimap as well.</p>
 			<p>Try finding the secret shops on the map by clicking them, or click <a id="revealSecret">here</a> to reveal.</p>
 			<p>
@@ -370,11 +370,11 @@
 
 
 			</p>
-			<p>They are a bit out of the way, but luckily there is an animal courier that will bring you your items. After 3 minutes, it can be upgraded to fly, making it faster and able to go over terrain. Here those are in the shop.</p>
-			<p>[picture of couriers in shop]</p>
+			<p>They are a bit out of the way, but luckily there is an animal courier that will bring you your items. After 3 minutes, it can be upgraded to fly, making it faster and able to go over terrain. Near the bottom of the left column in the shop, they are the donkeys.</p>
+			
 			<p>Be careful, as the opponent can kill it.</p>
 			<p>Luckily there are three buttons near the bottom right that make it easy to use the courier.</p>
-			<p>[courier buttons]</p>
+			
 			<p>The first one selects the courier for you. After clicking it, you can move it to the secret shop to buy the item for you!</p>
 			<p>The second button tells the courier to pick up items in your stash (if you have any) and deliver all your items to you. This allows you to receive your items even if you aren't in the fountain. You can send the courier to the secret shop, buy your item, and then press this button to have it delivered to you.</p>
 			<p>The last button makes the courier faster for a short period of time. It's useful if you have to fly the courier over dangerous areas.</p>
@@ -419,7 +419,7 @@
 				When the clock reaches 0:00, creeps will spawn near your base and walk along the lanes. Eventually, they'll meet up with the enemy creeps and start attacking each other.
 			</p>
 
-			<p><img src="/images/dota/beginner/clock.png"> [creeps fighting, also exp range]</p>
+			<p><img src="/images/dota/beginner/clock.png"> <br /> <img src="/images/dota/beginner/creeps_fighting.png"></p>
 
 			<p>When an enemy creep dies, you'll get experience if you're within range. It's pretty big, so you don't need to hug them.</p>
 
@@ -506,7 +506,7 @@
 
 			<p>As you probably noticed, lanes are only a small area of the whole map. On the way bot for Radiant, or top for Dire, there's an area called the jungle. There are many camps of neutral creeps that you can kill for gold and exp. However, it is difficult for most heroes at early levels, and not suitable for some heroes in general. So, starting out a good benchmark is waiting until 25 or 30 minutes before trying to kill camps. If there are no units (no creeps, no heroes) near the camp at each minute mark, new creeps will spawn.</p>
 			<p>These camps are located in the small clearings and indicated with small triangles on the minimap. secret shops</p>
-			<p>[minimap with jungle (creeps spawned), runes, rosh]</p>
+			<p><!--[minimap with jungle (creeps spawned), runes, rosh]--></p>
 			<p>One of the exits of each jungle leads to the rune spots--one near the top left and one near the bottom right of the river. Every even-numbered minute, a rune will spawn at each of these. There are seven different ones in total, and give a variety of buffs. Honestly, it's a good idea to pick up the one closer to your lane every two minutes so you can get an idea of what they do, but remembering to do so comes with time.</p>
 			<p>Near the bot rune, there's a cave. You can't actually get vision of what's inside unless you enter. Inside is Roshan, a boss-like neutral creep. Upon killing him, he gives the team gold and drops an Aegis of the Immortal, which anyone can pick up. This item revives the holder if they die, but disappears after 5 minutes. 3-6 minutes later, Roshan respawns.</p>
 			<p>Later in the game, the Aegis is a powerful tool, so you can try taking Roshan with your team when opponents are respawning or far away. At early levels Roshan is usually hard to kill, and can be dangerous if the opponent comes, so it's not a bad idea to leave him alone.</p>
